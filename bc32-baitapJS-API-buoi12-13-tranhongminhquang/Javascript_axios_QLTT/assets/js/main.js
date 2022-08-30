@@ -1,7 +1,6 @@
 // mảng chứa object
 let users1 = [];
 
-
 // tạo object contructor People
 function User(
   id,
@@ -269,15 +268,12 @@ function validUserName() {
     if (valUserName === users1[i].account) {
       spanUserName.innerHTML = "UserName đã có người sử dụng";
       return false;
-    } else {
-      spanUserName.innerHTML = "";
-      return true;
     }
   }
 
   // // nếu đúng hết yêu cầu thì ko hiện ra thông báo
-  // spanUserName.innerHTML = "";
-  // return true;
+  spanUserName.innerHTML = "";
+  return true;
 }
 
 // ==== Hàm kiểm tra tên người dùng
